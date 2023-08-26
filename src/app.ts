@@ -1,9 +1,9 @@
-import * as schedule  from 'node-schedule';
+import * as schedule from 'node-schedule';
 import { OBMonitor } from './monit';
 import mongoose from 'mongoose';
 
 async function main() {
-	
+
 	let monitor: OBMonitor;
 	let db: mongoose.Mongoose;
 
@@ -16,7 +16,7 @@ async function main() {
 		console.error('Failed to connect to MongoDB', err);
 		return; //함수종료
 	}
-	
+
 	// #2. Scheduler
 	schedule.scheduleJob('*/1 7-20 * * *', async () => {  // 1분마다, 7~20시, 
 		console.log('==> Crawring Start');

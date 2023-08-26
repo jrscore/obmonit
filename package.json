@@ -1,25 +1,25 @@
 {
-  "name": "ob_mon",
-  "version": "1.0.0",
-  "description": "",
-  "bin": "./server.js",
-  "scripts": {
-    "dev": "ts-node ./src/app.ts",
-    "prod": "pm2 start ./dist/app.js",
-    "build": "tsc && node ./src/app.ts"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/node": "^20.4.8",
-    "@types/node-schedule": "^2.1.0",
-    "@types/puppeteer": "^7.0.4",
-    "mongoose": "^7.4.2",
-    "node-schedule": "^2.1.1",
-    "puppeteer": "^21.0.1",
-    "typescript": "^5.1.6"
-  },
-  "devDependencies": {
-    "ts-node": "^10.9.1"
-  }
+	"name": "ob_mon",
+	"version": "1.0.0",
+	"description": "",
+	"bin": "./server.js",
+	"scripts": {
+		"dev": "ts-node ./src/app.ts",
+		"prod": "pm2 start ./dist/app.js --name 'ob_mon'",
+		"build": "tsc && node ./dist/app.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/node": "^20.4.8",
+		"@types/node-schedule": "^2.1.0",
+		"@types/puppeteer": "^7.0.4",
+		"mongoose": "^7.4.2",
+		"node-schedule": "^2.1.1",
+		"puppeteer": "^21.0.1",
+		"typescript": "^5.1.6"
+	},
+	"devDependencies": {
+		"ts-node": "^10.9.1"
+	}
 }
