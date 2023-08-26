@@ -15,9 +15,9 @@ export class OBMonitor {
 
 	private async init() {
 		this.browser = await puppeteer.launch({
-			headless: false,
+			headless: new,
 			defaultViewport: null,
-			args: ['--window-size=1020,1080', '--start-fullscreen'],
+			args: [],
 		});
 		const pages = await this.browser.pages();
 		this.page = pages[0];
