@@ -20,3 +20,5 @@ git clone '~~~' foldername
 ########## 동기화
 git pull origin main 		=> main branch 동기화 
 git push origin main
+
+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
