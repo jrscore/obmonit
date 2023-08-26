@@ -18,7 +18,7 @@ async function main() {
 	}
 	
 	// #2. Scheduler
-	schedule.scheduleJob('*/1 7-20 * * *', async () => {  // 1분마다, 7~20시, 
+	schedule.scheduleJob('*/5 7-20 * * *', async () => {  // 1분마다, 7~20시, 
 		console.log('==> Crawring Start');
 		try {
 			// 로그인 확인 및 재로그인 필요 시 수행
