@@ -20,3 +20,38 @@ git clone '~~~' foldername
 ########## 동기화
 git pull origin main 		=> main branch 동기화 
 git push origin main
+
+
+- sudo apt-get install build-essential
+
+- sudo apt-get install curl
+
+- curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash --
+
+- sudo apt-get install -y nodejs
+
+- sudo apt-get install git
+
+- sudo apt-get install vim
+
+- touch .gitconfig
+
+- git config --global user.name amamov
+
+-  git config --global user.email amamov@kakao.com
+
+-  git config --global --list
+
+- git clone <프로젝트>
+
+- cd <프로젝트>
+
+- npm i
+
+- sudo npm i -g @nestjs/cli
+
+- sudo npm i -g pm2
+
+- vi .env (환경변수 붙여 넣기)
+
+- sudo npm run start:prod
