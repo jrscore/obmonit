@@ -55,3 +55,4 @@ git push origin main
 - vi .env (환경변수 붙여 넣기)
 
 - sudo npm run start:prod
+'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'
